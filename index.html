@@ -87,5 +87,20 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/atekron">Michael Kret</a>.
     </div>
+    <script>
+      var faqAccordion = document.getElementsByClassName("question");
+      var i;
+      for (i = 0; i < faqAccordion.length; i++) {
+        faqAccordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var answer = this.nextElementSibling;
+          if (answer.style.display === "block") {
+            answer.style.display = "none";
+          } else {
+            answer.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

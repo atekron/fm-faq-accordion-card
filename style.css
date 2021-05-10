@@ -86,18 +86,25 @@ body {
   margin-bottom: 1rem;
   font-size: 1.2em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .question::after {
   content: url("/images/icon-arrow-down.svg");
   display: block;
   float: right;
-  /* transform: rotate(180deg); */
 }
 
-.questions > li > p {
-  display: block;
+.answer {
+  display: none;
   padding-right: 2rem;
+}
+
+/* util classes */
+
+.active,
+.question:hover {
+  color: black;
 }
 
 @media screen and (min-width: 960px) {
