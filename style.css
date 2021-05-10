@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --divider: hsl(240, 5%, 91%);
+  --text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --text-dark-grayish-blue: hsl(240, 6%, 50%);
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --voft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  --screen-mobile: 375px;
+  --screen-desktop: 1440px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: var(--text-dark-grayish-blue);
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+.container {
+  width: var(--screen-mobile);
+  margin: auto;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.hero-image {
+  height: 7rem;
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left 65px;
+}
+
+.hero-image > img {
+  display: block;
+  position: relative;
+  top: -100px;
+  right: -40px;
+}
+
+.faq {
+  padding: 2rem 2rem;
+}
+
+.faq > h1 {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+}
+
+.questions {
+  padding-bottom: 2rem;
+}
+
+.questions > li {
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--divider);
+}
+
+.questions > li > h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.questions > li > p {
+  padding-right: 2rem;
+}
