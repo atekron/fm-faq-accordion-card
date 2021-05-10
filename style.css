@@ -65,7 +65,7 @@ body {
   padding: 2rem 2rem;
 }
 
-.faq > h1 {
+.faq > h2 {
   padding-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -118,7 +118,7 @@ body {
     padding: 4rem 5rem 4rem 0;
   }
 
-  .faq > h1 {
+  .faq > h2 {
     text-align: left;
   }
 
